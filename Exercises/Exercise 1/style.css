@@ -1,0 +1,21 @@
+body{
+    background-color: lemonchiffon;
+}
+
+h1 :hover
+p{
+    color:rgb(167, 95, 95);
+}
+
+.wrapper li {
+    color: rgb(114, 188, 188);
+}
+
+.wrapper > p {
+    color:beige
+    font-style:italic
+}
+
+.wrapper a:link{
+    color:blue
+}

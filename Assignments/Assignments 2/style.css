@@ -1,31 +1,40 @@
-body{
+body {
     background-color: rgb(44, 44, 44);
+    color: rgb(255, 255, 255); 
+    font-family: 'Roboto Slab', serif; 
 }
-.title{
-    color:rgb(245, 218, 13);
-    font-variant: normal;
-    font-style: normal;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: large;
-    font-weight: heavy;
+
+.title h1 {
+    color: rgb(245, 218, 13); 
+    font-family: 'Lobster', cursive; 
+    font-size: 48px; 
+    font-weight: bold;
 }
-.author{
-    color:rgb(157, 204, 69);
-    font-style: normal;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: middle;
+
+.author h3 {
+    color: rgb(157, 204, 69);
+    font-family: 'Roboto Slab', serif; 
+    font-size: 20px; 
     font-weight: lighter;
-.body1 p{
+}
+
+h4 {
     color: rgb(192, 228, 204);
-    font-style: normal;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: small;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 26px;
     font-weight: lighter;
 }
-.footer{
-    color:rgb(157, 204, 69);
-    font-family: monospace;
+
+p {
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto Slab', serif;
+    font-size: 12px;
+    text-indent: 30px;
+}
+
+.footer {
+    color: rgb(157, 204, 69);
+    font-family: 'Roboto Slab', serif;
     font-style: italic;
-    letter-spacing: -1.2px;
-    font-size: large;   
+    font-size: 12px;
 }

@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(44, 44, 44);
+}
+.title{
+    color:rgb(245, 218, 13);
+    font-variant: normal;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: heavy;
+}
+.author{
+    color:rgb(157, 204, 69);
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: middle;
+    font-weight: lighter;
+.body1 p{
+    color: rgb(192, 228, 204);
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    font-weight: lighter;
+}
+.footer{
+    color:rgb(157, 204, 69);
+    font-family: monospace;
+    font-style: italic;
+    letter-spacing: -1.2px;
+    font-size: large;   
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluid Layout with Flexbox</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            display: flex;
+        }
+
+        section {
+            flex-basis: 75%;
+            background-color: lightcoral;
+        }
+
+        aside {
+            flex-basis: 25%;
+            background-color: rgb(132, 203, 232);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            color: var(--black);
+        }
+
+        :root {
+            --white: #f4f4f4;
+            --black: #141414;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <header>Header</header>
+        <main>
+            <aside>Aside</aside>
+            <section>Section</section>
+        </main>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

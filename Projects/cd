@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  padding: 0;
+}
+
+.left-column {
+  position: fixed;         /* 固定位置 */
+  height: 100vh;           /* 高度占满整个视口 */
+  width: 30%;              /* 宽度设置为30% */
+  background-color: #b5cde8; /* 设置背景颜色 */
+  padding: 20px;           /* 内边距 */
+  box-sizing: border-box;  /* 包含内边距在宽高计算中 */
+}
+
+
+.left-column h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+}
+
+.ingredient-category {
+  margin-bottom: 40px;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: underline;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.ingredient-placeholder-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: left;
+}
+
+.ingredient-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 80px;
+}
+
+.ingredient-placeholder img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #f2dfc0;
+}
+
+.ingredient-name {
+  font-size: 1rem;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.right-column {
+  position: fixed;         /* 固定位置 */
+  top: 0;                  /* 距离顶部 0 */
+  right: 0;                /* 距离右侧 0 */
+  width: 70%;              /* 设置列宽 */
+  background-color: #f9f9f9; /* 背景颜色 */
+  padding: 20px;           /* 内边距 */
+  box-sizing: border-box;  /* 包括内边距在内 */
+  height: 30vh;           /* 高度占满整个视口 */
+}
+
+.right-column h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.time-category {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.time-item {
+  padding: 15px 40px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.time-item.blue {
+  background-color: #7babe1;
+}
+
+.time-item.yellow {
+  background-color: #fdde63;
+}
+
+.time-item.red {
+  background-color: #ee8377;
+}
+
+.main-content {
+  margin-left: 30%; /* 左侧栏宽度 */
+  width: 70%; /* 剩余宽度 */
+  height: 100vh;
+  overflow-y: auto; /* 启用滚动 */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+
+.recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.dish {
+  width: 150px;
+  text-align: center;
+}
+
+.dish-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.dish-name {
+  font-size: 18px;
+  color: #555555;
+  word-wrap: break-word;
+}
+
+.row-break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-column, .right-column {
+    width: 100%;
+  }
+}

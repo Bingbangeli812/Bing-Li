@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What to Eat Today?</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Importing Caveat font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="left-column">
+      <h2 class="fridge-heading">FRIDGE</h2>
+      <div class="search-bar">
+        <input type="text" placeholder="Search ingredients...">
+      </div>
+      <div class="ingredients">
+        <!-- Meat Category -->
+        <div class="ingredient-category">
+          <h3 class="category-title">Meat</h3>
+          <div class="ingredient-placeholder-container">
+            <div class="ingredient-placeholder" data-meat="Chicken">
+              <img src="symbol of food/Meat/CHICKEN.png" alt="Chicken">
+              <p class="ingredient-name">Chicken</p>
+            </div>
+            <div class="ingredient-placeholder" data-meat="Beef">
+              <img src="symbol of food/Meat/BEEF.png" alt="Beef">
+              <p class="ingredient-name">Beef</p>
+            </div>
+            <div class="ingredient-placeholder" data-meat="Pork">
+              <img src="symbol of food/Meat/PIG.png" alt="Pork">
+              <p class="ingredient-name">Pork</p>
+            </div>
+            <div class="ingredient-placeholder" data-meat="Fish">
+              <img src="symbol of food/Meat/FISH.png" alt="Fish">
+              <p class="ingredient-name">Fish</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vegetables Category -->
+        <div class="ingredient-category">
+          <h3 class="category-title">Vegetables</h3>
+          <div class="ingredient-placeholder-container">
+            <div class="ingredient-placeholder" data-vegetable="Carrot">
+              <img src="symbol of food/Vegetables/CARROT.png" alt="Carrot">
+              <p class="ingredient-name">Carrot</p>
+            </div>
+            <div class="ingredient-placeholder" data-vegetable="Broccoli">
+              <img src="symbol of food/Vegetables/BROCCOLI.png" alt="Broccoli">
+              <p class="ingredient-name">Broccoli</p>
+            </div>
+            <div class="ingredient-placeholder" data-vegetable="Cucumber">
+              <img src="symbol of food/Vegetables/CUCUMBER.png" alt="Cucumber">
+              <p class="ingredient-name">Cucumber</p>
+            </div>
+            <div class="ingredient-placeholder" data-vegetable="Eggplant">
+              <img src="symbol of food/Vegetables/EGGPLANT.png" alt="Eggplant">
+              <p class="ingredient-name">Eggplant</p>
+            </div>
+            <div class="ingredient-placeholder" data-vegetable="Garlic">
+              <img src="symbol of food/Vegetables/GARLIC.png" alt="Garlic">
+              <p class="ingredient-name">Garlic</p>
+            </div>
+            <div class="ingredient-placeholder" data-vegetable="Mushroom">
+              <img src="symbol of food/Vegetables/MUSHROOM.png" alt="Mushroom">
+              <p class="ingredient-name">Mushroom</p>
+            </div>
+            <div class="ingredient-placeholder" data-vegetable="Onion">
+              <img src="symbol of food/Vegetables/ONION.png" alt="Onion">
+              <p class="ingredient-name">Onion</p>
+            </div>
+            <div class="ingredient-placeholder" data-vegetable="Pepper">
+              <img src="symbol of food/Vegetables/PEPPER.png" alt="Pepper">
+              <p class="ingredient-name">Pepper</p>
+            </div>
+            <div class="ingredient-placeholder" data-vegetable="Potato">
+              <img src="symbol of food/Vegetables/POTATO.png" alt="Potato">
+              <p class="ingredient-name">Potato</p>
+            </div>
+            <div class="ingredient-placeholder" data-vegetable="Scallion">
+              <img src="symbol of food/Vegetables/SCALLION.png" alt="Scallion">
+              <p class="ingredient-name">Scallion</p>
+            </div>
+            <div class="ingredient-placeholder" data-vegetable="Tomato">
+              <img src="symbol of food/Vegetables/TOMATO.png" alt="Tomato">
+              <p class="ingredient-name">Tomato</p>
+            </div>          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-column">
+      <h2 class="eat-heading">WHAT TO EAT TODAY?</h2>
+      <div class="time-category">
+        <div class="time-item blue" data-time="30 mins">30 minutes</div>
+        <div class="time-item yellow" data-time="1 hour">1 hour</div>
+        <div class="time-item red" data-time="2 hours">2 hours</div>
+      </div>
+    </div>
+ 
+    <div class="main-content">  
+      <div class="recipe-list">
+        <div class="dish" data-meat="Pork" data-vegetables="Eggplant,Garlic,Scallion" data-time="30 mins">
+          <img src="Chinese Dishes/Fish-Flavored Eggplant.jpg" alt="Fish-Flavored Eggplant" class="dish-image">
+          <p class="dish-name">Fish-Flavored Eggplant</p>
+        </div>
+        
+        <div class="dish" data-meat="Chicken" data-vegetables="Scallion,Garlic,Pepper,Cucumber" data-time="30 mins">
+          <img src="Chinese Dishes/Kung Pao Chicken.jpg" alt="Kung Pao Chicken" class="dish-image">
+          <p class="dish-name">Kung Pao Chicken</p>
+        </div>
+        
+        <div class="dish" data-meat="None" data-vegetables="Potato,Garlic,Scallion,Pepper" data-time="30 mins">
+          <img src="Chinese Dishes/Hot and Sour Shredded Potato.jpg" alt="Hot and Sour Shredded Potato" class="dish-image">
+          <p class="dish-name">Hot and Sour Shredded Potato</p>
+        </div>
+
+        <div class="dish" data-meat="Fish" data-vegetables="Scallion,Garlic" data-time="30 mins">
+          <img src="Chinese Dishes/Steamed Fish.jpg" alt="Steamed Fish" class="dish-image">
+          <p class="dish-name">Steamed Fish</p>
+        </div>
+
+        <div class="dish" data-meat="Pork" data-vegetables="Pepper,Garlic" data-time="30 mins">
+          <img src="Chinese Dishes/Stir-Fried Pork with Green Pepper.jpg" alt="Stir-Fried Pork with Green Pepper" class="dish-image">
+          <p class="dish-name">Stir-Fried Pork with Green Pepper</p>
+        </div>
+
+        <div class="dish" data-meat="None" data-vegetables="Potato,Garlic,Pepper" data-time="30 mins">
+          <img src="Chinese Dishes/Spicy Stir-Fried Potato.jpg" alt="Spicy Stir-Fried Potato" class="dish-image">
+          <p class="dish-name">Spicy Stir-Fried Potato</p>
+        </div>
+
+        <div class="dish" data-meat="Pork" data-vegetables="Garlic,Scallion" data-time="30 mins">
+          <img src="Chinese Dishes/Garlic Scapes with Pork.jpg" alt="Garlic Scapes with Pork" class="dish-image">
+          <p class="dish-name">Garlic Scapes with Pork</p>
+        </div>
+
+        <div class="dish" data-meat="Fish" data-vegetables="Scallion,Garlic" data-time="30 mins">
+          <img src="Chinese Dishes/Spicy Bean Sauce Fish.jpg" alt="Spicy Bean Sauce Fish" class="dish-image">
+          <p class="dish-name">Spicy Bean Sauce Fish</p>
+        </div>
+        
+        <div class="dish" data-meat="Pork" data-vegetables="Scallion,Garlic,Pepper" data-time="30 mins">
+          <img src="Chinese Dishes/Stir-Fried Pork.jpg" alt="Stir-Fried Pork" class="dish-image">
+          <p class="dish-name">Stir-Fried Pork</p>
+        </div>
+
+        <!-- Dish 10 -->
+        <div class="dish" data-meat="Fish" data-vegetables="Pepper,Scallion,Garlic" data-time="30 mins">
+          <img src="Chinese Dishes/Spicy Fried Fish.jpg" alt="Spicy Fried Fish" class="dish-image">
+          <p class="dish-name">Spicy Fried Fish</p>
+        </div>
+      
+        <!-- Dish 11 -->
+        <div class="dish" data-meat="Chicken" data-vegetables="Mushroom,Garlic,Scallion" data-time="2 hours">
+          <img src="Chinese Dishes/Braised Chicken with Shiitake Mushroom.jpg" alt="Braised Chicken with Shiitake Mushroom" class="dish-image">
+          <p class="dish-name">Braised Chicken with Shiitake Mushroom</p>
+        </div>
+      
+        <!-- Dish 12 -->
+        <div class="dish" data-meat="Fish" data-vegetables="None" data-time="30 mins">
+          <img src="Chinese Dishes/Fish Fillets with Scrambled Eggs.jpg" alt="Fish Fillets with Scrambled Eggs" class="dish-image">
+          <p class="dish-name">Fish Fillets with Scrambled Eggs</p>
+        </div>
+      
+        <!-- Dish 13 -->
+        <div class="dish" data-meat="Pork" data-vegetables="None" data-time="2 hours">
+          <img src="Chinese Dishes/Braised Pork Ribs.jpg" alt="Braised Pork Ribs" class="dish-image">
+          <p class="dish-name">Braised Pork Ribs</p>
+        </div>
+      
+        <!-- Dish 14 -->
+        <div class="dish" data-meat="Beef" data-vegetables="Tomato,Garlic" data-time="2 hours">
+          <img src="Chinese Dishes/Tomato Braised Beef.jpg" alt="Tomato Braised Beef" class="dish-image">
+          <p class="dish-name">Tomato Braised Beef</p>
+        </div>
+      
+        <!-- Dish 15 -->
+        <div class="dish" data-meat="Pork" data-vegetables="Eggplant,Garlic" data-time="1 hour">
+          <img src="Chinese Dishes/Braised Eggplant with Pork.jpg" alt="Braised Eggplant with Pork" class="dish-image">
+          <p class="dish-name">Braised Eggplant with Pork</p>
+        </div>
+      
+      
+        <!-- Dish 16 -->
+        <div class="dish" data-meat="Chicken" data-vegetables="Mushroom,Garlic,Scallion" data-time="2 hours">
+          <img src="Chinese Dishes/Braised Chicken with Mushroom.jpg" alt="Braised Chicken with Mushroom" class="dish-image">
+          <p class="dish-name">Braised Chicken with Mushroom</p>
+        </div>
+      
+        <!-- Dish 17 -->
+        <div class="dish" data-meat="Beef" data-vegetables="Onion,Garlic,Pepper" data-time="2 hours">
+          <img src="Chinese Dishes/Braised Beef.jpg" alt="Braised Beef" class="dish-image">
+          <p class="dish-name">Braised Beef</p>
+        </div>        
+      
+        <!-- Dish 18 -->
+        <div class="dish" data-meat="Pork" data-vegetables="Garlic,Scallion" data-time="1 hour">
+          <img src="Chinese Dishes/Twice-Cooked Pork.jpg" alt="Twice-Cooked Pork" class="dish-image">
+          <p class="dish-name">Twice-Cooked Pork</p>
+        </div>
+      
+        <!-- Dish 19 -->
+        <div class="dish" data-meat="Pork" data-vegetables="Garlic,Scallion,Pepper" data-time="1 hour">
+          <img src="Chinese Dishes/Salt and Pepper Pork Chops.jpg" alt="Salt and Pepper Pork Chops" class="dish-image">
+          <p class="dish-name">Salt and Pepper Pork Chops</p>
+        </div>
+      
+        <!-- Dish 20 -->
+        <div class="dish" data-meat="Pork" data-vegetables="Garlic,Scallion" data-time="30 mins">
+          <img src="Chinese Dishes/Steamed Tofu with Minced Pork.jpg" alt="Steamed Tofu with Minced Pork" class="dish-image">
+          <p class="dish-name">Steamed Tofu with Minced Pork</p>
+        </div>
+        
+        <!-- Dish 21 -->
+        <div class="dish" data-meat="Beef" data-vegetables="Garlic,Scallion,Pepper" data-time="1 hour">
+          <img src="Chinese Dishes/Spicy Boiled Beef.jpg" alt="Spicy Boiled Beef" class="dish-image">
+          <p class="dish-name">Spicy Boiled Beef</p>
+        </div>
+
+        <!-- Dish 22 -->
+        <div class="dish" data-meat="Chicken" data-vegetables="Tomato,Garlic" data-time="1 hour">
+          <img src="Chinese Dishes/Tomato Stewed Chicken.jpg" alt="Tomato Stewed Chicken" class="dish-image">
+          <p class="dish-name">Tomato Stewed Chicken</p>
+        </div>
+
+        <!-- Dish 23 -->
+        <div class="dish" data-meat="Beef" data-vegetables="Potato,Onion" data-time="2 hours">
+          <img src="Chinese Dishes/Braised Beef with Potato.jpg" alt="Braised Beef with Potato" class="dish-image">
+          <p class="dish-name">Braised Beef with Potato</p>
+        </div>
+
+        <!-- Dish 24 -->
+        <div class="dish" data-meat="Beef" data-vegetables="Garlic,Scallion" data-time="2 hours">
+          <img src="Chinese Dishes/Marinated Beef.jpg" alt="Marinated Beef" class="dish-image">
+          <p class="dish-name">Marinated Beef</p>
+        </div>
+
+        <!-- Dish 25 -->
+        <div class="dish" data-meat="Fish" data-vegetables="Scallion,Garlic" data-time="2 hours">
+          <img src="Chinese Dishes/Fish Head Tofu Soup.jpg" alt="Fish Head Tofu Soup" class="dish-image">
+          <p class="dish-name">Fish Head Tofu Soup</p>
+        </div>
+
+        <!-- Dish 26 -->
+        <div class="dish" data-meat="None" data-vegetables="Potato,Garlic,Pepper" data-time="1 hour">
+          <img src="Chinese Dishes/Spicy Stir-Fried Potato.jpg" alt="Spicy Stir-Fry Pot" class="dish-image">
+          <p class="dish-name">Spicy Stir-Fry Pot</p>
+        </div>
+
+        <!-- Dish 27 -->
+        <div class="dish" data-meat="Beef" data-vegetables="Onion,Garlic,Pepper" data-time="2 hours">
+          <img src="Chinese Dishes/Braised Beef.jpg" alt="Braised Beef" class="dish-image">
+          <p class="dish-name">Braised Beef</p>
+        </div>
+
+        <!-- Dish 28 -->
+        <div class="dish" data-meat="Chicken" data-vegetables="Mushroom,Garlic,Scallion" data-time="2 hours">
+          <img src="Chinese Dishes/Braised Chicken with Shiitake Mushroom.jpg" alt="Braised Chicken with Shiitake Mushroom" class="dish-image">
+          <p class="dish-name">Braised Chicken with Shiitake Mushroom</p>
+        </div>
+
+        <!-- Dish 29 -->
+        <div class="dish" data-meat="Pork" data-vegetables="Garlic,Scallion,Pepper" data-time="1 hour">
+          <img src="Chinese Dishes/Mapo Tofu.jpg" alt="Mapo Tofu" class="dish-image">
+          <p class="dish-name">Mapo Tofu</p>
+        </div>
+
+        <!-- Dish 30 -->
+        <div class="dish" data-meat="Chicken" data-vegetables="Potato,Onion,Garlic" data-time="1 hour">
+          <img src="Chinese Dishes/Braised Chicken with Potato.jpg" alt="Braised Chicken with Potato" class="dish-image">
+          <p class="dish-name">Braised Chicken with Potato</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  </body>
+</html>
